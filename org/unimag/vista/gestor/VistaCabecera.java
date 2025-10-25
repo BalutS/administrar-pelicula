@@ -111,7 +111,10 @@ public class VistaCabecera extends HBox {
         });
 
         opcion3.setOnAction((e) -> {
-            System.out.println("Abrir formulario Administrar Película");
+            miPanelPrincipal.setCenter(
+                    PeliculaVistasControlador.administrarPelicula(miEscenario,
+                            Configuracion.ANCHO_APP, Configuracion.ALTO_CABECERA)
+            );
         });
 
         opcion4.setOnAction((e) -> {
